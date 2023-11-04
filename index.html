@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Conveyor Belt</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .function-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        #input {
+            width: 100px;
+            height: 30px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        
+        #output {
+            width: 100px;
+            height: 30px;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        
+        .conveyor-belt {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        
+        .belt {
+            background-color: #666;
+            height: 10px;
+            flex-grow: 1;
+            margin: 0 5px;
+        }
+        
+        #run-button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="function-container">
+        <input id="input" type="text" placeholder="Input">
+        <div class="conveyor-belt">
+            <div class="belt"></div>
+            <div class="belt"></div>
+            <div class="belt"></div>
+        </div>
+        <input id="output" type="text" placeholder="Output">
+        <button id="run-button">Run Function</button>
+    </div>
+</body>
+</html>
